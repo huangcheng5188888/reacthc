@@ -17,13 +17,9 @@ export default function Home() {
     useEffect(() => {
         console.log(count);
         window.addEventListener('scroll', bindHandleScroll)
-        // axios.post("/vue/login", { phone: '15675050737', password: 'a123456' }).then(res => {
-        //     console.log(res)
-
-        // })
-    }, []); //componentDidMount
+      
+    }, []); 
     useEffect(() => {
-        // console.log(0+);
         setNum(num + 1)
         dispatch(innser(333322))
     }, [scrollTop]);

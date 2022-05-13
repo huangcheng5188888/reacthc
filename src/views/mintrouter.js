@@ -27,26 +27,21 @@ export default function Mints() {
             if (i > 6) {
                 i = 0
             }
-
         }, 1000)
         return () => {
             clearInterval(timeis)
             timeis = null
         }
     }, [])
-
     return isLodging ? <div className='mints-warp your-warp'>
-
         <Header />
         {/* <img className='mints-bg' src={require('../assets/About_bg.png')} alt="" /> */}
         <div className='mints-content'>
+            {/* <divd></divd> */}
             <div className='your-h1'>
                 YOUR STEAM APE
             </div>
             <div className='text-centent'>
-
-
-
                 <div className='box'>
                     <p className='t1'>minted:</p>
                     <p className='t2'>  1234/5000</p>
@@ -90,10 +85,7 @@ export default function Mints() {
             </div>
             <div className='but-nimt'> MINT</div>
             <div className='text-nimt'>
-
                 Connected As： IUH53...662
-
-
                 <span>axjz</span>
             </div>
         </div>
