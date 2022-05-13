@@ -56,15 +56,15 @@ export default function Mints() {
 
                         </div>
                     </div>
-                    <p className='t4'>
+                    <div className='t4'>
                         <p>Total gas</p>
                         <p className='tp1'>0 &nbsp; + &nbsp;  GAS</p>
-                    </p>
+                    </div>
                     <div className='jg'></div>
-                    <p className='t5'>
+                    <div className='t5'>
                         <p>Amount</p>
                         <p className='tp1'>0 &nbsp; X   &nbsp; 0.15 </p>
-                    </p>
+                    </div>
                 </div>
             </div>
             <div className='input1'>
