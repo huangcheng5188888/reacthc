@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './index.scss'
 import { getTime } from '../../utils/index.js'
 import { Waypoint } from 'react-waypoint';
-import moment from 'moment'
 let isTime = null
 
 export default function Mint(props) {
