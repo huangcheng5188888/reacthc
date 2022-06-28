@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Lodging from '../components/loding';
-import SideNav from '../components/sideNav';
 import TextContent from '../content';
-import { ACTIONNAV } from '../reducers/action';
 import Mint from './about/mint';
 import Nfts from './about/nfts';
 import Roadmap from './about/roadmap';
@@ -12,14 +10,12 @@ import Teams from './about/teams';
 import Welcome from './about/welcome';
 import Header from '../components/header';
 import Footer from '../components/footer';
-
 let topValue = 0
 let a = 0
 export default function About() {
     // 滚动条高度
     const [scrollTop, setScrollTop] = useState(0)
     const [isShow, setIsShow] = useState(true)
-
     const WelcomeHeight = useRef()
     const MintHeight = useRef()
     const NftsHeight = useRef()

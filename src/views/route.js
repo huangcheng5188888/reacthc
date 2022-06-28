@@ -41,7 +41,12 @@ export default function App() {
         load(urlArr[i]);
     }
     useEffect(() => {
-        loadImages([require('../assets/bg-1111.png'), require('../assets/logooo.gif'), require('../assets/bg.png'),])
+        loadImages([
+            require('../assets/bg-1111.png'), 
+        require('../assets/logooo.gif'), 
+        require('../assets/bg.png'),
+        require('../assets/home_bg.gif'),
+    ])
     }, [])
     return (
         <>

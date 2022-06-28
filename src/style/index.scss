@@ -35,51 +35,56 @@
   font-family: ArialBlack;
   src: url('./font/ArialBlack.ttf');
 }
+@font-face {
+  font-family: ArialBold;
+  src: url('./font/ArialBold.ttf');
+}
 
 .home-warp {
   width: 100%;
   background-color: #000;
   overflow: hidden;
-  background: url('../assets/bg-1111.png') no-repeat;
+  background: url('../assets/组 8166.png') no-repeat;
   background-size: 100% 100%;
-  padding-top: 1.19rem;
+  padding-top: 0.92rem;
 
-  .icon-top {
-
-    display: flex;
-    justify-content: flex-end;
-    // display: -webkit-flex;
-    /* Safari */
-    -webkit-justify-content: flex-end;
-    /* Safari 6.1+ */
-    // margin-bottom: 20px;
-    margin: 0 auto;
-    width: 14.57rem;
-    margin-bottom: 15px;
-
-    img {
-      margin-left: .28rem;
-    }
-  }
 
   .home-text {
-    // margin-bottom: .68rem;
     position: relative;
-    // left: 50%;
-    // margin-top: 1.19rem;
-    // transform: translateX(-50%);
     margin: 0 auto .34rem;
-    width: 14.57rem;
-    // height: 8.19rem;
+    width: 1096.11px;
+
+    .icon-top {
+      position: absolute;
+      right: 0;
+      top: 100px;
+      display: flex;
+      justify-content: flex-end;
+      // display: -webkit-flex;
+      /* Safari */
+      -webkit-justify-content: flex-end;
+      /* Safari 6.1+ */
+      // margin-bottom: 20px;
+      margin: 0 auto;
+      width: 1096.11px;
+      margin-bottom: 15px;
+
+      img {
+        margin-left: .28rem;
+      }
+    }
+
   }
 
   .new-logo-bg {
-    width: 4.07rem;
-    position: absolute;
+    width: 1096.11px;
+    height: 754.33px;
+    position: relative;
     z-index: 999;
     left: 50%;
     // transform: translateX(-50%);
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   .steam-engine,
@@ -89,39 +94,72 @@
     // height: 100%;
   }
 
-  .steam-engine {
+  .steam-engines {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 6px;
+    left: 50%;
+    // transform: translateX(-50%);
+    // transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #271330 0%, #070719 100%);
+  }
+
+  .steam-engine {
+
+    width: 1086.11px;
+    // height: 750.33px;
+
   }
 
   .home-content {
     // display: flex;
     overflow: hidden;
-    width: 4.76rem;
-    height: 2.99rem;
-    background: url('../assets/home-enter.png');
+    width: 100%;
+    height: 96.54px;
+    // background: url('../assets/home-enter.png');
     position: absolute;
     bottom: 0.03rem;
     right: 0;
-    z-index: 5;
-
+    z-index: 5555555;
+    background: rgba(0, 0, 0, 0.39);
+    // padding: 0 16px 0 33px;
+    display: flex;
     // padding-top: 24px;
     // padding-right: 37px;
-    .home-text {
-      position: absolute;
-      transform: rotate(-90deg);
-      width: max-content;
-      bottom: 1.15rem;
-      left: -0.65rem;
-      font-size: .23rem;
-      font-family: GellixMedium;
-      line-height: 1px;
+    align-items: center;
+    justify-content: space-between;
+
+    .home-texts {
+      margin-left: 33px;
+      font-size: 24px;
+      font-family: ArialBlack;
+      line-height: 28px;
       color: #FFFFFF;
-      animation: opacitysUp 1.3s linear infinite;
     }
 
-
+    .but {
+      width: 262.93px;
+      height: 48px;
+      background: rgb(255, 150, 3);
+      opacity: 1;
+      border-radius: .1rem;
+      margin-right: 33px;
+      font-size: 21px;
+      font-family: ArialBold;
+      line-height: 48px;
+      color: #000000;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .butj{
+        width: 9.17px;
+        height: 12.67px;
+        margin-left: 20px;
+      }
+    }
 
     @keyframes opacitysUp {
       from {
@@ -144,21 +182,7 @@
       // margin: 0px .37rem 0 0;
     }
 
-    .but {
-      width: 3.66rem;
-      height: .68rem;
-      background: rgb(255, 150, 3);
-      opacity: 1;
-      border-radius: .1rem;
-      // margin: 25px auto 0;
-      margin: 25px 0 0 0;
-      font-size: .22rem;
-      font-family: Arial-BoldMT;
-      line-height: 0.68rem;
-      color: #000000;
-      text-align: center;
-      cursor: pointer;
-    }
+
 
     .text-box {
       display: flex;
