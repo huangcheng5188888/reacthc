@@ -1,14 +1,30 @@
-import React from 'react'
-import styled from 'styled-components';
-import Winput from '@/components/w-input'
+import React, { useState } from 'react'
+import  {useSelector,useDispatch} from 'react-redux'
+
 export default function About() {
 
+const count = useSelector(state => state.data.items);
 
+const dispatch = useDispatch();
+const [ass,b] = useState('1')
+function handclick(params) {
+    dispatch({type:'oooo',value:ass})
+}
+function handchange(params) {
+    // dispatch({type:'oooo'})
+   
+    var value =params.target.value
+    b(value)
+
+}
     return (
         <>
-            <Title color='red'>333</Title>
-            <Text color='#000'>你好</Text>
-            <Winput height={40} prefix={<div>333</div>}></Winput>
+         {count}
+         <button  onClick={handclick}>
+        修改
+         </button>
+         <input type="text" onChange={handchange} />
+
         </>
 
 
@@ -16,12 +32,3 @@ export default function About() {
 }
 
 
-const Title = styled.div`
-  color: #007f57;
-  background-color: ${props => props.color ? props.color : '#6ff'};
-`
-
-
-const Text = styled(Title)`
-  font-size: 29px;
-`

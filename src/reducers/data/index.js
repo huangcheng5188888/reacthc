@@ -1,7 +1,6 @@
-import { INNSER, LOADING, ACTIONNAV } from "../action";
 
 const defaultState = {
-    items: [{ a: 1 }],
+    items: 1,
     isLodging: false,
     isActionNav: 1
 
@@ -9,14 +8,16 @@ const defaultState = {
 
 
 
+
 export const data = (state = defaultState, action) => {
+    console.log(action.value);
     switch (action.type) {
-        case INNSER:
-            return { ...state, items: action.time }
-        case LOADING:
-            return { ...state, isLodging: action.data }
-        case ACTIONNAV:
-            return { ...state, isActionNav: action.data }
+      case 'oooo' :
+        
+      return {...state,items:action.value}
+      case 'ooopo' :
+      return {...state}
+
         default:
             return state;
     }
